@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  color: #f4f4f5;
+  font-family: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  overflow-x: hidden;
+  background-color: #08040f;
+  background-image:
+    radial-gradient(circle at 75% 10%, rgba(147, 51, 234, 0.35) 0%, transparent 45%),
+    radial-gradient(circle at 20% 50%, rgba(76, 29, 149, 0.28) 0%, transparent 50%),
+    radial-gradient(circle at 80% 90%, rgba(147, 51, 234, 0.35) 0%, transparent 50%),
+    radial-gradient(2px 2px at 20px 30px, #c084fc, transparent),
+    radial-gradient(1.5px 1.5px at 120px 90px, #a855f7, transparent),
+    radial-gradient(1px 1px at 180px 150px, #e9d5ff, transparent);
+  background-size: auto, auto, auto, 240px 180px, 240px 180px, 240px 180px;
+  background-attachment: fixed;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #c084fc, #a855f7, #6366f1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Scrollbar morada */
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: #08040f; }
+::-webkit-scrollbar-thumb { background: #6d28d9; border-radius: 9999px; }
+
+
+section[id] {
+  scroll-margin-top: 70px;
+}

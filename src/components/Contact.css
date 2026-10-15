@@ -1,0 +1,168 @@
+.contact-section {
+  padding: 0 1.5rem;
+}
+
+.contact-wrapper {
+  position: relative;
+  overflow: hidden;
+  max-width: 800px;
+  margin: 0 auto 5rem auto;
+  padding: 4rem 2rem;
+  background:
+    radial-gradient(circle at 50% 0%, rgba(147, 51, 234, 0.35), transparent 70%),
+    rgba(15, 8, 28, 0.92);
+  border: 2px solid #a855f7;
+  border-radius: 2rem;
+  text-align: center;
+  box-shadow: 0 0 40px rgba(168, 85, 247, 0.55), inset 0 0 20px rgba(168, 85, 247, 0.15);
+}
+
+.contact-wrapper > *:not(.contact-orb) {
+  position: relative;
+  z-index: 1;
+}
+
+/* Orbes de luz decorativos */
+.contact-orb {
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  filter: blur(60px);
+  opacity: 0.45;
+  pointer-events: none;
+  animation: contact-pulse 7s ease-in-out infinite;
+}
+
+.contact-orb-left {
+  bottom: -80px;
+  left: -60px;
+  background: #6366f1;
+}
+
+.contact-orb-right {
+  top: -60px;
+  right: -60px;
+  background: #a855f7;
+  animation-delay: 3s;
+}
+
+@keyframes contact-pulse {
+  0%, 100% { transform: scale(1); opacity: 0.35; }
+  50% { transform: scale(1.2); opacity: 0.55; }
+}
+
+.contact-text {
+  color: #c4b5d6;
+  font-size: 0.95rem;
+  max-width: 400px;
+  margin: 0 auto 1.8rem auto;
+}
+
+/* Botones */
+.contact-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+}
+
+.contact-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.8rem 1.8rem;
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 9999px;
+  background: linear-gradient(135deg, #a855f7, #6d28d9);
+  border: 1px solid rgba(233, 213, 255, 0.5);
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.6);
+  transition: all 0.25s ease;
+}
+
+.contact-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 34px rgba(168, 85, 247, 0.95);
+}
+
+.contact-copy {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.8rem 1.3rem;
+  font-family: inherit;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 9999px;
+  background: transparent;
+  border: 1.5px solid #a855f7;
+  box-shadow: 0 0 14px rgba(168, 85, 247, 0.35);
+  transition: all 0.25s ease;
+}
+
+.contact-copy:hover {
+  background: rgba(168, 85, 247, 0.25);
+  transform: translateY(-3px);
+}
+
+/* Info */
+.contact-info {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  margin-top: 1.6rem;
+  font-size: 0.78rem;
+  color: #a78bba;
+}
+
+.contact-info span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.contact-info svg {
+  color: #c084fc;
+}
+
+/* Redes */
+.contact-socials {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.6rem;
+}
+
+.contact-social {
+  width: 46px;
+  height: 46px;
+  display: grid;
+  place-items: center;
+  border-radius: 0.8rem;
+  color: #e9d5ff;
+  background: rgba(168, 85, 247, 0.14);
+  border: 1px solid rgba(168, 85, 247, 0.45);
+  transition: all 0.25s ease;
+}
+
+.contact-social:hover {
+  color: #fff;
+  transform: translateY(-4px);
+  background: linear-gradient(135deg, #a855f7, #6d28d9);
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.8);
+}
+
+@media (max-width: 600px) {
+  .contact-wrapper { padding: 3rem 1.2rem; }
+  .contact-btn { font-size: 0.85rem; padding: 0.75rem 1.3rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .contact-orb { animation: none; }
+}
