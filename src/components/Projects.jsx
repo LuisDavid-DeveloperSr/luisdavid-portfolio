@@ -28,7 +28,7 @@ const projectList = [
     description: 'View official unemployment statistics across Europe.',
     tags: ['React', 'Node.js', 'Eurostat API'],
     image: eurostat,
-    link: 'https://labor-stats-frontend.vercel.app/', // TODO
+    link: 'https://euro-labor-dashboard.vercel.app/', 
   },
   {
     title: 'University Performance Dashboard',
