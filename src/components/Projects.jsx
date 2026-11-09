@@ -20,7 +20,7 @@ const projectList = [
     description: 'Website about design and brand identity, deployed on Vercel.',
     tags: ['React', 'UI/UX', 'Vercel'],
     image: arimcrea,
-    link: 'https://arimcrea.vercel.app/', // TODO: URL real del sitio o repo
+    link: 'https://www.arimcrea.com/', 
   },
   {
     title: 'Labour Statistics Dashboard',
